@@ -8,6 +8,8 @@
 
 //* Variables: A variable is a container that holds a value. It has a name and can be used to store and manipulate data in a program.
 
+console.log('nitin singh');
+
 //! Let's test
 // var my_firstName = "John";
 

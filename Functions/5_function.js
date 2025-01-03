@@ -3,9 +3,36 @@
 //* ==============================
 //? In JavaScript, a function is a block of reusable code that performs a specific task or set of tasks. Functions are used to organize code into modular and manageable pieces, promote code reuse, and make programs more readable.
 
-//  3 students at a time wants to find the sum of two numbers
+//Q-1  3 students at a same time wants to find the sum of two numbers
 
 // 1st student
+// var a = 45;
+//     b = 26;
+// let sum1 = a+b;
+// console.log(sum1);
+
+// // 2nd student
+// var a = 95;
+//     b = 56;
+// let sum2 = a+b;
+// console.log(sum2);
+
+// // 3rd student
+// var a = 85;
+//     b = 96;
+// let sum3 = a+b;
+// console.log(sum3);
+
+// let make a reusable code
+
+function sum(a, b) {
+    return a + b;
+}
+
+console.log(sum(32, 56));
+console.log(sum(89, 4));
+console.log(sum(78, 96));
+
 
 //* ===============================
 //* Function Declaration:

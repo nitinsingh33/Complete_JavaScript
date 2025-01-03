@@ -7,6 +7,7 @@
 //* =====================================
 
 //? let Keyword:  The let keyword is used to declare variables with block scope. Variables declared with let are mutable, meaning their values can be reassigned.
+
 //? const Keyword: The const keyword is used to declare variables with block scope, but once a value is assigned to a const variable, it cannot be reassigned. const variables are immutable.
 
 //* ==========================================
@@ -62,6 +63,11 @@
 //? Default function parameters allow named parameters to be initialized with default values if no value or undefined is passed.
 
 //! Write a function to find sum of two numbers? What if during function call user only passed one argument?
+
+function sum(a, b=10) {
+    return a + b;
+}
+console.log(sum(5, 15));
 
 //* ==========================================
 //*  FAT ARROW FUNCTION

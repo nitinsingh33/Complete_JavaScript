@@ -25,13 +25,13 @@
 
 // let make a reusable code
 
-function sum(a, b) {
-    return a + b;
-}
+// function sum(a, b) {
+//     return a + b;
+// }
 
-console.log(sum(32, 56));
-console.log(sum(89, 4));
-console.log(sum(78, 96));
+// console.log(sum(32, 56));
+// console.log(sum(89, 4));
+// console.log(sum(78, 96));
 
 
 //* ===============================
@@ -42,7 +42,7 @@ console.log(sum(78, 96));
 //? This step defines the function and specifies what code should be executed when the function is called.
 
 // function greet() {
-//   console.log("Hello Guys, Welcome to Thapa Technical JS Course ");
+//   console.log("Hello Guys, Welcome!");
 // }
 
 //* =================================================
@@ -61,6 +61,12 @@ console.log(sum(78, 96));
 //todo Tips "1st declare the function & then call it" In JavaScript, it's a good practice to declare (define) your functions before you call them. This ensures that the function is available for use when you try to call it.
 
 // Function definition
+function sum() {
+    var a=5,
+        b=5;
+    console.log(a + b);
+}
+sum();
 
 // Calling the function
 

@@ -61,14 +61,15 @@
 //todo Tips "1st declare the function & then call it" In JavaScript, it's a good practice to declare (define) your functions before you call them. This ensures that the function is available for use when you try to call it.
 
 // Function definition
-function sum() {
-    var a=5,
-        b=5;
-    console.log(a + b);
-}
-sum();
+// function sum() {
+//     var a=5,
+//         b=5;
+//     console.log(a + b);
+// }
+
 
 // Calling the function
+// sum();
 
 //* ==============================
 //* Function Parameter:
@@ -94,17 +95,42 @@ sum();
 //? Let's say we want to greet students with one same line
 //! Write a JavaScript program that defines a function called greet to welcome individuals to the Thapa Technical JS Course. The function should take a name parameter and output the message "Hello [name], Welcome to Thapa Technical JS Course". Call the function twice, once with the argument "vinod" and once with the argument "ram".
 
+// function greet(name) {
+//     console.log("Hello " + name + ", Welcome to Thapa Technical JS course");
+// } 
+
+// greet("Nitin");
+// greet("Shyam");
+
 //! 1. Write a function to find the sum of two numbers with parameters.
+// function sum(a, b) {
+//     console.log(a + b);
+// }
+
+// sum(5,10);
+
 
 //* ==============================
 //* Function expressions
 //* ==============================
 //? A function expression is a way to define a function as part of an expression. It can be either named or anonymous. If it's named, it becomes a named function expression.
 
+// var result = function sum(a, b) {
+//     console.log(a + b);
+// };
+
+// result(10, 15);
+
 //* ==============================
 //*  Anonymous Function
 //* =============================
 //? An anonymous function is a function without a name. It can be created using either a function expression or a function declaration without a specified name.
+
+// var result = function (a, b) {
+//     console.log(a + b);
+// };
+
+// result(10, 15);
 
 //* ==============================
 //*  Return Keyword
@@ -115,6 +141,14 @@ sum();
 // return expression;
 
 //! Example 1: Returning a Sum of two number
+
+function sum(a, b) {
+        return a + b;
+    }
+    
+    console.log(sum(32, 56));
+    console.log(sum(89, 4));
+    console.log(sum(78, 96));
 
 //* ==============================
 //* IIFE - immediately invoked function expression

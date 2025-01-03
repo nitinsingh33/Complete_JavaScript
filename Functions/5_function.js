@@ -142,23 +142,35 @@
 
 //! Example 1: Returning a Sum of two number
 
-function sum(a, b) {
-        return a + b;
-    }
+// function sum(a, b) {
+//         // console.log(a + b);
+//         return a + b;
+//     }
+
+//     var result = sum(5, 8);
+//     console.log(result);
+
+//     console.log("the sum of the two number is " +
+//          result);
     
-    console.log(sum(32, 56));
-    console.log(sum(89, 4));
-    console.log(sum(78, 96));
+//     // console.log(sum(32, 56));
+//     // console.log(sum(89, 4));
+//     // console.log(sum(78, 96));
 
 //* ==============================
 //* IIFE - immediately invoked function expression
 //* =============================
 //? An IIFE, or Immediately Invoked Function Expression, is a JavaScript function that is defined and executed immediately after its creation. It is a way to create a self-contained block of code that doesn't interfere with the surrounding code and executes immediately
 
-// Syntax
-// (function () {
-//   // code to be executed
-// })();
+/*
+Syntax
+(function () {
+    // code to be executed
+})();                          */
+
+(function (a,b) {
+    console.log(a + b);
+})(5,10);
 
 // !Practice Time ( IIFE with Parameters)
 

@@ -22,6 +22,7 @@ function greet() {
 function greet() {
     console.log("Hello Nitin!");
 }
+
 greet()
 ```
 ### Syntax-Function Parameter
@@ -30,6 +31,7 @@ greet()
 function greet(parameter1, parameter2, ...) {
     console.log("Hello Nitin!");
 }
+
 greet()
 ```
 ### Syntax-Function Argument
@@ -38,21 +40,24 @@ greet()
 function greet(parameter1, parameter2, ...) {
     console.log("Hello Nitin!");
 }
+
 greet(argument1, argument2, ...)
 ```
 
-## Function Expressions
 
-A function expression defines a function and assigns it to a variable. Unlike function declarations, function expressions are not hoisted, meaning you cannot call them before they are defined.
+## Function expressions
+
+A function expression is a way to define a function as part of an expression. It can be either named or anonymous. If it's named, it becomes a named function expression.
 
 ### Syntax:
 ```javascript
-const add = function(a, b) {
-    return a + b;
-};
+var result = function sum(a, b) {
+     console.log(a + b);
+ };
 
-console.log(add(2, 3)); // Output: 5
-```
+ result(10, 15);
+ ```
+
 
 ### Key Points:
 - Function expressions can be named or anonymous.
@@ -62,16 +67,22 @@ console.log(add(2, 3)); // Output: 5
 
 ## Arrow Functions
 
-Arrow functions provide a more concise syntax for writing functions. They are especially useful for callbacks and when working with array methods. However, arrow functions do not have their own `this` context, which makes them behave differently from regular functions in some cases.
+An arrow function is a concise way to write function expressions. They were introduced in ES6 (ECMAScript 2015) and have become very popular due to their shorter syntax and lexical scoping of the this keyword. 
 
 ### Syntax:
 ```javascript
+const functionName = (parameters) => {
+    // function body
+};
+```
+### Examples:
+```javascript
 const multiply = (a, b) => a * b;
 
-console.log(multiply(2, 3)); // Output: 6
+console.log(multiply(2, 3));   //Output: 6
 ```
 
-### Examples:
+
 1. Single parameter:
 ```javascript
 const square = x => x * x;
@@ -147,14 +158,4 @@ console.log(sum); // Output: 10
 
 ---
 
-### Summary Table
-| Feature               | Syntax Example                             | Key Points                                       |
-|-----------------------|-------------------------------------------|-------------------------------------------------|
-| Function Expression   | `const add = function(a, b) { ... };`     | Anonymous or named, not hoisted.               |
-| Arrow Function        | `const add = (a, b) => a + b;`            | Concise syntax, no `this` binding.             |
-| Higher-Order Function | `array.map(x => x * 2);`                  | Takes/returns functions, enables abstractions. |
-
----
-
-By mastering these function types, you can write more flexible, modular, and expressive JavaScript code.
 

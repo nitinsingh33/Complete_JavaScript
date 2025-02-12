@@ -49,3 +49,31 @@ let promise = new Promise((resolve, reject) => {....})
 //function with 2 handlers(resolve, reject)
 ```
 *resolve & reject are callbacks provided by JS*
+
+A JS Promise object can be:
+*   Pending: the result is undefined
+*   Resolved: the result is a value (fulfilled)    **resolve(result)**
+*   Rejected: the result is an error object        **reject
+(error)**
+
+
+*Promise has state (pending, fulfilled) & some result (result for resolve & error for reject).*
+
+## How to use promises
+
+.then() & .catch()
+
+promise.then(( res ) => { .... })       //execute only when fulfilled
+
+promise.catch(( err ) => { .... })     //execute only when reject
+
+
+## Async-Await
+
+**async function always returns a promise.**
+
+```javascript
+async function myFunc() { ... }
+```
+
+**await pauses the execution of its surrounding async function until the promise is settled.**
